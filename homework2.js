@@ -20,7 +20,9 @@ function isNegative(value) {
 
 /* 3. Написати функцію, яка повертає true якщо перший аргумент ділиться на другий без остачі, або якщо ні - повертає false */
 function divider(num1, num2) {
-  return num1 % num2 ? false : true;
+  function divider(num1, num2) {
+    return num1 % num2 ? false : true;
+  }
 }
 
 /* 4. Написати функцію, яка рекурсивно виводить в консоль аргумент та збільшує його на 2 якщо аргумент не
