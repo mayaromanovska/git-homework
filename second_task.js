@@ -61,15 +61,8 @@ console.log(removeDuplicatesAndSort(initialArray)); // виводить [ 1, 4, 
  */
 const initialArray2 = [2, 3, 6, 7, 9, 12];
 function arrayOfEvens(arr) {
-    let resultArray = new Array();
-    let j = 0;
-    for (i = 0; i < arr.length; i++){
-        if (!(arr[i] % 2)) {            
-            resultArray[j] = arr[i];
-            j++;            
-        }
-    }
-    return resultArray;
+    let arrayResult = arr.filter((x) => x % 2 === 0);  
+    return arrayResult;
 }
 
 console.log(arrayOfEvens(initialArray2)); // виводить [ 2, 6, 12 ]
